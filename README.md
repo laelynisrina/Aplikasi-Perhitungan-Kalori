@@ -1,266 +1,240 @@
-📘 FITBYTE – Healthy Tracking App
-Aplikasi pelacak kalori harian berbasis Java dengan tampilan GUI (Swing) dan versi console.
-FitByte membantu pengguna menghitung kebutuhan kalori berdasarkan profil dan mencatat makanan yang dikonsumsi setiap hari.
+---
 
-🎯 Tujuan Aplikasi
-Membantu pengguna memantau total kalori makanan harian.
+✅ **README.md — FitByte**
 
-Menyediakan log makanan yang tersusun berdasarkan waktu makan.
+````
+# FitByte — Aplikasi Penghitungan Kalori & Pencatatan Makanan Sehat Sesuai Jadwal
 
-Memberikan peringatan otomatis jika kalori melebihi kebutuhan.
 
-Mengelola jadwal makan (pagi, siang, malam, snack).
+FitByte adalah aplikasi Java yang membantu pengguna menghitung kebutuhan kalori harian, mencatat makanan yang dikonsumsi, dan melihat jadwal makan. Aplikasi tersedia dalam dua versi: **Console App** dan **GUI (Swing)**.
 
-Menyimpan riwayat makan ke file .txt secara otomatis.
+Project ini dibuat sebagai **Tugas Akhir Praktikum Pemrograman Berorientasi Objek**.
 
-🛠️ Cara Menjalankan Program
+---
 
-📌 Persyaratan
-Software	Keterangan
-JDK 8+	Untuk menjalankan program Java
-IDE (NetBeans / IntelliJ / Eclipse)	Untuk membuka dan menjalankan proyek
-OS Windows / Linux / Mac	Aplikasi dapat berjalan di semua OS
+## 1. Tujuan Project
 
-📌 Langkah Menjalankan
-Clone / Download folder proyek.
+Aplikasi ini dibuat untuk:
 
-Buka IDE lalu Import Project Java.
+- Menghitung kebutuhan kalori pengguna berdasarkan rumus BMR + Faktor Aktivitas.
+- Mencatat makanan yang dikonsumsi beserta total kalorinya.
+- Memberikan peringatan ketika pengguna melebihi batas kalori harian.
+- Menyediakan jadwal makan terstruktur (pagi, siang, malam, snack).
+- Menyediakan antarmuka GUI bertema pastel yang modern dan ramah pengguna.
 
-Pastikan folder utama berisi file berikut:
+---
 
-MainGUI.java
+## 2. Cara Menjalankan Program
 
-User.java
+### A. **Versi Console**
 
-Food.java
+1. Pastikan Java sudah terinstall.
+2. Buka folder project melalui terminal.
+3. Jalankan perintah berikut:
 
-MealLog.java
+```bash
+javac *.java
+java CalorieApp
+````
 
-Schedule.java
+---
 
-CalorieApp.java (versi console)
+### B. **Versi GUI**
 
-Jalankan file berikut sesuai mode:
+1. Pastikan JDK dan library Swing siap digunakan.
+2. Compile:
 
-GUI version: jalankan MainGUI.java
+```bash
+javac *.java
+java MainGUI
+```
 
-Console version: jalankan CalorieApp.java
+GUI akan tampil secara otomatis.
 
-Aplikasi siap digunakan 🎉
+---
 
-🖥️ 1. Penjelasan Setiap Class
+## 3. Penjelasan GUI
 
-📌 1. User.java
-Menyimpan profil pengguna & menghitung kebutuhan kalori harian.
-Atribut tersimpan:
+### **Tampilan Utama**
 
-Berat badan
+GUI terdiri dari sidebar dan area konten utama.
 
-Tinggi badan
+### **Fitur Sidebar**
 
-Usia
+| Fitur          | Fungsi                                     |
+| -------------- | ------------------------------------------ |
+| Profil         | Input dan tampilkan data user              |
+| Tambah Makanan | Form menambahkan makanan                   |
+| Log Makan      | Melihat daftar makanan yang sudah dicatat  |
+| Jadwal Makan   | Checklist status jadwal makan              |
+| Keluar         | Menyimpan log ke file dan menutup aplikasi |
 
-Aktivitas
+---
 
-Fitur:
+### **Halaman Profil**
 
-Menghitung kalori harian (rumus Mifflin-St Jeor)
+Berfungsi untuk:
 
-Menampilkan profil
+* Input data pengguna (berat, tinggi, umur, aktivitas).
+* Menghitung kebutuhan kalori otomatis.
+* Menampilkan ringkasan profil.
 
-Menyimpan jadwal makan pengguna
+---
 
-📌 2. Food.java
-Representasi objek makanan.
+### **Halaman Tambah Makanan**
 
-Atribut:
+* Input nama makanan, jumlah kalori, dan waktu makan.
+* Menambahkan data ke `MealLog`.
+* Memberikan peringatan ketika total kalori melewati batas harian.
 
-Nama makanan
+---
 
-Kalori per porsi
+### **Halaman Log Makan**
 
-Waktu makan
+* Menampilkan tabel berisi log makanan.
+* Tersedia tombol **Refresh Log** untuk memuat ulang data.
 
-Fitur:
+---
 
-Menampilkan detail makanan
+### **Halaman Jadwal Makan**
 
-Objek digunakan di log & jadwal makan
+Memiliki empat jadwal default:
 
-📌 3. MealLog.java
-Menyimpan seluruh makanan yang dimakan pada satu hari.
+* Pagi
+* Siang
+* Malam
+* Snack
 
-Fitur:
+Pengguna dapat memberi checklist pada setiap jadwal yang sudah dijalankan.
 
-Menambah/hapus makanan
+---
 
-Menghitung total kalori
+## 4. Implementasi Materi Sebelum UTS
 
-Menampilkan log makan
+Menggunakan konsep:
 
-Menyimpan data ke file
+* Class
+* Object
+* Method
+* Constructor
+* Package
 
-📌 4. Schedule.java
-Menyimpan jadwal makan:
+### **Contoh Implementasi Class & Constructor**
 
-Pagi
+```java
+public class Food {
+    private String namaMakanan;
+    private double kaloriPerPorsi;
 
-Siang
+    public Food(String nama, double kalori) {
+        this.namaMakanan = nama;
+        this.kaloriPerPorsi = kalori;
+    }
 
-Malam
-
-Snack
-
-Fitur:
-
-Menandai jadwal selesai
-
-Menampilkan status
-
-Pengingat otomatis
-
-📌 5. MainGUI.java (Aplikasi GUI)
-Aplikasi berbasis Swing GUI berisi:
-
-Sidebar menu
-
-Profil pengguna
-
-Input makanan
-
-Log makanan
-
-Jadwal makan (checkbox)
-
-Export log ke file .txt
-
-📌 6. CalorieApp.java (Versi Console)
-Program berbasis teks dengan fitur:
-
-Input profil
-
-Menambah makanan
-
-Menampilkan log
-
-Menyimpan log ke file
-
-Menampilkan jadwal makan
-
-🖼️ 2. Preview GUI (Screenshots)
-
-📌 Menu Utama
-<img width="1096" height="685" alt="Screenshot 2025-12-10 175936" src="https://github.com/user-attachments/assets/d228a31e-99b2-42a0-a172-68537319f035" />
-
-📌 Profil
-<img width="1101" height="685" alt="Screenshot 2025-12-10 180254" src="https://github.com/user-attachments/assets/9f67bdda-5166-484b-91ff-9e426db5988f" />
-
-📌 Tambah Makanan
-<img width="1103" height="681" alt="Screenshot 2025-12-10 180552" src="https://github.com/user-attachments/assets/ca1a35f3-3666-42b5-9192-d906dbc870a0" />
-<img width="1108" height="696" alt="Screenshot 2025-12-10 180631" src="https://github.com/user-attachments/assets/9e6f038d-02d4-4ed0-a95f-6620a54cf506" />
-<img width="1099" height="683" alt="Screenshot 2025-12-10 180711" src="https://github.com/user-attachments/assets/731a22f4-1c8b-4285-a3f5-fad81f2f50d7" />
-
-
-
-📌 Log Makan
-<img width="1101" height="677" alt="Screenshot 2025-12-10 180754" src="https://github.com/user-attachments/assets/d3d49074-0b68-4999-a5a3-adb3bd75374c" />
-
-📌 Jadwal Makan
-<img width="1103" height="687" alt="Screenshot 2025-12-10 180841" src="https://github.com/user-attachments/assets/fa686d8f-08d2-47ec-9e1d-36e2fe0fe6d9" />
-
-📌 Keluar (Save Log)
-<img width="1100" height="684" alt="Screenshot 2025-12-10 180920" src="https://github.com/user-attachments/assets/ce0f786c-14b3-44a0-a116-22ce4434062c" />
-
-
-🧾 3. Output Versi Console
-
-
-
-
-📌 Profil
-<img width="391" height="409" alt="Screenshot 2025-12-10 181122" src="https://github.com/user-attachments/assets/6fb6cdb0-8438-49c2-bc91-43ab996c6229" />
-
-
-
-
-📌 Tambah Makan
-<img width="301" height="235" alt="Screenshot 2025-12-10 181212" src="https://github.com/user-attachments/assets/7125e3db-f9ec-4249-be8b-95a052c88280" />
-
-
-
-
-📌 Log Makan
-<img width="433" height="250" alt="image" src="https://github.com/user-attachments/assets/5630dd25-3a08-4e50-abb8-8c1f97f865d5" />
-
-
-
-
-📌 Keluar
-<img width="482" height="192" alt="Screenshot 2025-12-10 181411" src="https://github.com/user-attachments/assets/ed5630f9-270d-4d46-9e41-fd9dd448460f" />
-
-
-
-
-📚 4. Implementasi Materi Sebelum UTS (2 Materi Wajib)
-🔐 1. Encapsulation (User, Food, Schedule, MealLog)
-Seluruh atribut di-set sebagai private, lalu diakses dengan getter & setter.
-
-Contoh kode:
-private String nama;
-
-public String getNama() {
-    return nama;
+    public double getKalori() {
+        return kaloriPerPorsi;
+    }
 }
+```
 
-public void setNama(String nama) {
-    this.nama = nama;
+Pemanggilan:
+
+```java
+Food mie = new Food("Mie Goreng", 450);
+```
+
+---
+
+### **Kondisional & Looping**
+
+Contoh pengecekan batas kalori:
+
+```java
+if (mealLog.getTotalKaloriHarian() > user.getKebutuhanKalori()) {
+    System.out.println("Anda sudah melebihi kebutuhan kalori!");
 }
-Manfaat implementasi:
-Data aman & terkontrol
+```
 
-Menghindari manipulasi variabel sembarangan
+Contoh looping:
 
-Kelas menjadi lebih rapi & modular
-
-🏗️ 2. Class & Object
-Setiap fitur utama dibuat sebagai kelas berbeda.
-
-Struktur OOP:
-Class	Fungsi
-User	Menyimpan data profil pengguna
-Food	Menyimpan detail makanan
-MealLog	Menyimpan daftar makanan (ArrayList)
-Schedule	Mengelola jadwal makan
-Manfaat:
-Program lebih mudah dikembangkan
-
-Kode lebih rapi dan modular
-
-Fitur dapat diperluas tanpa mengganggu class lain
-
-📎 5. Materi Setelah UTS (Non-GUI) – File I/O
-📄 File I/O (FileWriter)
-Saat pengguna menekan Keluar, aplikasi otomatis menyimpan log makanan ke file .txt.
-
-📌 Contoh hasil file
-=== LOG MAKAN HARI INI ===
-Nasi Goreng | 350 kkal | Pagi
-Teh Manis   | 120 kkal | Siang
-Total Kalori: 470 kkal
-📌 Contoh kode FileWriter
-FileWriter writer = new FileWriter("mealLog_" + LocalDate.now() + ".txt");
-writer.write("=== LOG MAKAN HARI INI ===\n");
-
-for (Food f : mealLog.getList()) {
-    writer.write(f.getName() + " | " + f.getCalories() + " kkal | " + f.getMealTime() + "\n");
+```java
+for (Food f : listMakanan) {
+    f.tampilkanMakanan();
 }
+```
 
-writer.write("Total Kalori: " + mealLog.getTotalCalories() + " kkal\n");
-writer.close();
-📌 Manfaat File I/O
-Data tidak hilang ketika aplikasi ditutup
+---
 
-Dapat digunakan sebagai riwayat untuk memantau kebiasaan makan
+## 5. Implementasi Materi Setelah UTS
 
-Memudahkan pengguna membaca catatan sebelumnya
+### **Enkapsulasi**
+
+* Semua atribut dibuat `private`
+* Akses melalui getter dan setter
+
+Contoh:
+
+```java
+private double beratBadan;
+
+public double getBeratBadan() {
+    return beratBadan;
+}
+```
+
+### **Inheritance**
+
+Struktur siap dikembangkan untuk:
+
+* User Premium
+* User Diet Khusus
+  Namun saat ini fokus pada enkapsulasi dan modularisasi class.
+
+---
+
+## 6. Screenshots Program
+
+| Fitur          | File               |
+| -------------- | ------------------ |
+| Halaman Profil | `img/profil.png`   |
+| Tambah Makanan | `img/add_food.png` |
+| Log Makan      | `img/log.png`      |
+| Jadwal Makan   | `img/jadwal.png`   |
+| Tampilan Utama | `img/main_gui.png` |
+
+Pastikan folder **/img/** tersedia di repo GitHub.
+
+---
+
+## 7. Pembagian Tugas Anggota
+
+Project dikerjakan oleh tiga anggota secara kolaboratif tanpa pembagian tugas spesifik:
+
+| Nama                     | NIM      | Kontribusi                                                       |
+| ------------------------ | -------- | ---------------------------------------------------------------- |
+| Fidela Novelia           | L0324012 | Perancangan class, implementasi fitur, GUI, testing, dokumentasi |
+| Laely Nisrina            | L0324019 | Perancangan class, implementasi fitur, GUI, testing, dokumentasi |
+| Nazwa Nur Aisyiyah Jafni | L0324029 | Perancangan class, implementasi fitur, GUI, testing, dokumentasi |
+
+**Catatan Kolaborasi:**
+
+* Semua keputusan desain dibuat melalui diskusi bersama.
+* Seluruh kode dan dokumentasi dikerjakan bersama.
+* Tidak ada peran eksklusif; semua fitur dikembangkan kolektif.
+
+---
+
+## 8. Lisensi
+
+Project ini dibuat untuk kebutuhan akademik dan bebas digunakan untuk pembelajaran.
+
+---
+
+## 9. Penutup
+
+FitByte membantu pengguna mengontrol pola makan dengan cara yang modern, informatif, dan mudah digunakan.
+Dengan adanya versi Console dan GUI, aplikasi ini dapat dijalankan pada berbagai kebutuhan pengguna.
+
+---
+
 
