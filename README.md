@@ -1,3 +1,45 @@
+FITBYTE – Healthy Tracking App
+Aplikasi tracking kalori harian berbasis Java + GUI (Swing).
+FitByte membantu pengguna menghitung kebutuhan kalori harian berdasarkan data profil (usia, berat, tinggi, dan aktivitas) dan mencatat makanan yang dikonsumsi dalam satu hari.
+✨ Tujuan aplikasi:
+
+Membantu pengguna memantau total kalori makanan.
+
+Menampilkan jadwal makan dan log makanan.
+
+Memberikan peringatan otomatis jika kalori melebihi kebutuhan.
+🛠 Cara Menjalankan Program
+Pastikan sudah terinstall:
+
+Software	                        Keterangan
+JDK 8+	                        Java Development Kit
+IDE (NetBeans/IntelliJ/Eclipse)	Editor untuk menjalankan proyek
+OS Windows/Linux/Mac	            Dapat dijalankan di semua OS
+
+🔧 Langkah menjalankan
+
+Clone/Download folder project.
+
+Import project ke IDE Java.
+
+Pastikan folder AplikasiPenghitungKalori/ berisi file:
+
+MainGUI.java
+
+User.java
+
+Food.java
+
+MealLog.java
+
+Schedule.java
+
+Jalankan file:
+
+MainGUI.java
+
+Aplikasi akan tampil dan siap digunakan 🎉
+
 1. Penjelasan Setiap Class
    1. User.java
       Menyimpan profil pengguna dan menghitung kebutuhan kalori harian berdasarkan:
@@ -74,11 +116,58 @@
    Tambah Makan
 <img width="301" height="235" alt="image" src="https://github.com/user-attachments/assets/fdfccea9-eccf-4ecf-8664-ee1a79de29a3" />
 
-   Log
-<img width="387" height="540" alt="image" src="https://github.com/user-attachments/assets/6e7e11be-55fc-4f9c-a2e8-cd2788e24278" />
+ Log
+
 
    Keluar
 <img width="482" height="192" alt="image" src="https://github.com/user-attachments/assets/3351be33-50a0-427d-aadb-ae412ad161e4" />
 
+📚 Implementasi Materi Sebelum UTS (2 Materi Wajib)
+🔐 1. Encapsulation (User, Food, Schedule, MealLog)
+Semua atribut bersifat private.
 
-6. 
+Akses menggunakan getter & setter.
+
+Contoh implementasi:
+
+private String nama;
+public String getNama() { return nama; }
+➡ Digunakan untuk menyimpan dan melindungi data user dan makanan.
+
+🏗️ 2. Class & Object
+Setiap fitur dibuat menjadi objek berbeda:
+
+Class	Fungsi
+User	Menyimpan data profil pengguna
+Food	Menyimpan info makanan
+MealLog	Menyimpan daftar makanan (ArrayList)
+Schedule	Menyimpan status jadwal makan
+➡ OOP membuat program terstruktur, rapi, dan mudah dikembangkan.
+
+📎 Materi Setelah UTS (Non-GUI) – Wajib 1
+📄 File I/O (FileWriter)
+Saat pengguna klik Keluar, program otomatis menyimpan log ke file .txt.
+
+📌 Contoh hasil file:
+
+=== LOG MAKAN HARI INI ===
+Nasi Goreng | 350 kkal | Pagi
+Teh Manis | 120 kkal | Siang
+Total Kalori: 470 kkal
+📌 Contoh kode:
+
+FileWriter writer = new FileWriter("mealLog_" + LocalDate.now() + ".txt");
+writer.write(...);
+writer.close();
+📌 Manfaat:
+
+Data tidak hilang meskipun aplikasi ditutup.
+
+Bisa dibaca ulang sebagai riwayat makan sehat.
+
+👥 Tim Pengembang
+Contributors
+Nama	NIM
+Fidela Novelia            L0324012
+Laely Nisrina             L0324019
+Nazwa Nur Aisyiyah Jafni  L0324029
