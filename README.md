@@ -72,13 +72,13 @@
    <img width="391" height="408" alt="image" src="https://github.com/user-attachments/assets/501b2555-a5d1-4c97-9e65-593348b88463" />
 
    Tambah Makan
-   <img width="301" height="235" alt="image" src="https://github.com/user-attachments/assets/fdfccea9-eccf-4ecf-8664-ee1a79de29a3" />
+<img width="301" height="235" alt="image" src="https://github.com/user-attachments/assets/fdfccea9-eccf-4ecf-8664-ee1a79de29a3" />
 
    Log
-   <img width="387" height="540" alt="image" src="https://github.com/user-attachments/assets/6e7e11be-55fc-4f9c-a2e8-cd2788e24278" />
+<img width="387" height="540" alt="image" src="https://github.com/user-attachments/assets/6e7e11be-55fc-4f9c-a2e8-cd2788e24278" />
 
    Keluar
-   <img width="482" height="192" alt="image" src="https://github.com/user-attachments/assets/3351be33-50a0-427d-aadb-ae412ad161e4" />
+<img width="482" height="192" alt="image" src="https://github.com/user-attachments/assets/3351be33-50a0-427d-aadb-ae412ad161e4" />
 
 
 6. 
