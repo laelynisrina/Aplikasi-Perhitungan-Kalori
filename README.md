@@ -116,11 +116,11 @@ Aplikasi akan tampil dan siap digunakan 🎉
    Tambah Makan
 <img width="301" height="235" alt="image" src="https://github.com/user-attachments/assets/fdfccea9-eccf-4ecf-8664-ee1a79de29a3" />
 
- Log
-
+   Log
+   <img width="388" height="540" alt="Screenshot 2025-12-10 181328" src="https://github.com/user-attachments/assets/1450ed98-57f6-48a9-8837-6e130534d2f4" />
 
    Keluar
-<img width="482" height="192" alt="image" src="https://github.com/user-attachments/assets/3351be33-50a0-427d-aadb-ae412ad161e4" />
+   <img width="482" height="192" alt="image" src="https://github.com/user-attachments/assets/3351be33-50a0-427d-aadb-ae412ad161e4" />
 
 📚 Implementasi Materi Sebelum UTS (2 Materi Wajib)
 🔐 1. Encapsulation (User, Food, Schedule, MealLog)
