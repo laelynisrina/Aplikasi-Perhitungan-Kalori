@@ -50,8 +50,18 @@
 2. Preview GUI
    <img width="1096" height="685" alt="image" src="https://github.com/user-attachments/assets/9eabaf6d-75ec-43fe-bf23-395001d6e2e9" />
    Profile
+   
    Tambah Makanan
+   
    Log Makan
+   
    Jadwal Makan
+   
    Keluar
-4. 
+4. Output Console
+   Profil
+
+   Tambah Makan
+
+   Log
+6. 
