@@ -243,7 +243,7 @@ Struktur siap dikembangkan untuk:
 | Fitur          | File               |
 | -------------- | ------------------ |
 | Halaman Profil | `img/profil.png`   |
-| Tambah Makanan | `img/add_food.png` |
+| Tambah Makanan | ![image alt]([image_url](https://github.com/laelynisrina/Aplikasi-Perhitungan-Kalori/blob/30c1c286261a3a1556f8fec89310c6656a8aaa41/img/addfood.png)) |
 | Log Makan      | `img/log.png`      |
 | Jadwal Makan   | `img/jadwal.png`   |
 | Tampilan Utama | `img/main_gui.png` |
