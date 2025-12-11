@@ -266,7 +266,7 @@ Project dikerjakan oleh tiga anggota secara kolaboratif tanpa pembagian tugas sp
 
 * Semua keputusan desain dibuat melalui diskusi bersama.
 * Seluruh kode dan dokumentasi dikerjakan bersama.
-* Tidak ada peran eksklusif; semua fitur dikembangkan kolektif.
+* Tidak ada peran eksklusif semua fitur dikembangkan kolektif.
 
 ---
 
