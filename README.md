@@ -1,9 +1,8 @@
----
-
+-----
 ✅ **README.md — FitByte**
 
 ````
-# FitByte — Aplikasi Penghitungan Kalori & Pencatatan Makanan Sehat Sesuai Jadwal
+FitByte — Aplikasi Penghitungan Kalori & Pencatatan Makanan Sehat Sesuai Jadwal
 
 
 FitByte adalah aplikasi Java yang membantu pengguna menghitung kebutuhan kalori harian,
