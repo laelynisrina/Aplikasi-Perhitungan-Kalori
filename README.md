@@ -1,12 +1,6 @@
------
-✅ **README.md — FitByte**
+# FitByte — Aplikasi Penghitungan Kalori & Pencatatan Makanan Sehat Sesuai Jadwal
 
-````
-FitByte — Aplikasi Penghitungan Kalori & Pencatatan Makanan Sehat Sesuai Jadwal
-
-
-FitByte adalah aplikasi Java yang membantu pengguna menghitung kebutuhan kalori harian,
-mencatat makanan yang dikonsumsi, dan melihat jadwal makan. Aplikasi tersedia dalam dua versi: **Console App** dan **GUI (Swing)**.
+FitByte adalah aplikasi Java yang membantu pengguna menghitung kebutuhan kalori harian, mencatat makanan yang dikonsumsi, dan melihat jadwal makan. Aplikasi tersedia dalam dua versi: **Console App** dan **GUI (Swing)**.
 
 Project ini dibuat sebagai **Tugas Akhir Praktikum Pemrograman Berorientasi Objek**.
 
@@ -28,39 +22,40 @@ Aplikasi ini dibuat untuk:
 
 ### A. **Versi Console**
 
-1. Pastikan Java (JDK) sudah terinstall dan dapat diakses melalui terminal/cmd.
-Cek dengan:
+1. Pastikan Java (JDK) sudah terinstall dan dapat diakses melalui terminal/cmd. Cek dengan:
 
+```bash
 java -version
+```
 
+2. Buka folder project di terminal/cmd:
 
-Buka folder project di terminal/cmd:
-
+```bash
 cd AplikasiPenghitunganKalori
+```
 
+3. Compile seluruh file .java:
 
-Compile seluruh file .java:
-
+```bash
 javac *.java
+```
 
+4. Jalankan program:
 
-Jalankan program:
-
+```bash
 java CalorieApp
+```
 
-Setelah Program Berjalan
+**Setelah Program Berjalan**
 
 Console akan meminta data seperti usia, berat, tinggi, dan aktivitas harian.
 
 Setelah itu, pengguna bisa:
 
-Mencatat makanan,
-
-Melihat total kalori harian,
-
-Menyimpan log ke file,
-
-Keluar dari aplikasi.
+- Mencatat makanan,
+- Melihat total kalori harian,
+- Menyimpan log ke file,
+- Keluar dari aplikasi.
 
 Semua output muncul langsung di terminal.
 
@@ -70,30 +65,29 @@ Semua output muncul langsung di terminal.
 
 1. Pastikan JDK sudah terinstall dan konfigurasi Swing tidak bermasalah.
 
-Compile semua file Java:
+2. Compile semua file Java:
 
+```bash
 javac *.java
+```
 
+3. Jalankan aplikasi GUI:
 
-Jalankan aplikasi GUI:
-
+```bash
 java MainGUI
+```
 
-Setelah Program Berjalan
+**Setelah Program Berjalan**
 
 Jendela GUI akan terbuka otomatis.
 
 Pengguna dapat:
 
-Mengisi data profil,
-
-Menambah makanan ke tabel,
-
-Melihat total kalori,
-
-Menyimpan data ke file melalui tombol Save,
-
-Berpindah halaman menggunakan menu navigasi.
+- Mengisi data profil,
+- Menambah makanan ke tabel,
+- Melihat total kalori,
+- Menyimpan data ke file melalui tombol Save,
+- Berpindah halaman menggunakan menu navigasi.
 
 Semua aktivitas dilakukan lewat tombol dan input form, tanpa terminal.
 
@@ -119,6 +113,8 @@ GUI terdiri dari sidebar dan area konten utama.
 
 ### **Halaman Profil**
 
+![Halaman Profil](https://github.com/user-attachments/assets/3a964b8d-45eb-4a30-a0b7-4b2638845265)
+
 Berfungsi untuk:
 
 * Input data pengguna (berat, tinggi, umur, aktivitas).
@@ -128,7 +124,15 @@ Berfungsi untuk:
 ---
 
 ### **Halaman Tambah Makanan**
-<img width="1329" height="827" alt="Screenshot 2025-12-10 235059" src="https://github.com/user-attachments/assets/6a72f6e3-2b3a-4899-b04e-6e736751da9b" />
+
+<img width="1107" height="691" alt="image" src="https://github.com/user-attachments/assets/137af45e-ff41-482d-9f85-5dc7eaeb5700" />
+
+<img width="1105" height="699" alt="image" src="https://github.com/user-attachments/assets/5b2a3d6d-11a0-40ab-880e-1dcff99d94d7" />
+
+<img width="1101" height="686" alt="image" src="https://github.com/user-attachments/assets/3ba3401b-3bfe-45af-b13b-bd898cdc52d9" />
+
+
+
 
 * Input nama makanan, jumlah kalori, dan waktu makan.
 * Menambahkan data ke `MealLog`.
@@ -138,12 +142,20 @@ Berfungsi untuk:
 
 ### **Halaman Log Makan**
 
+<img width="1107" height="687" alt="image" src="https://github.com/user-attachments/assets/c20b6762-b7ae-43a0-91a1-fdfe78c07fe5" />
+
+<img width="1102" height="686" alt="image" src="https://github.com/user-attachments/assets/304fb7c1-84ce-4767-bd6b-a7798645b99e" />
+
+
 * Menampilkan tabel berisi log makanan.
 * Tersedia tombol **Refresh Log** untuk memuat ulang data.
 
 ---
 
 ### **Halaman Jadwal Makan**
+
+<img width="1107" height="686" alt="image" src="https://github.com/user-attachments/assets/dc3e3194-aa2d-49a4-acc6-eed2c0bf731d" />
+
 
 Memiliki empat jadwal default:
 
@@ -235,21 +247,8 @@ Struktur siap dikembangkan untuk:
 
 * User Premium
 * User Diet Khusus
-  Namun saat ini fokus pada enkapsulasi dan modularisasi class.
 
----
-
-## 6. Screenshots Program
-
-| Fitur          | File               |
-| -------------- | ------------------ |
-| Halaman Profil | `img/profil.png`   |
-| Tambah Makanan | ![image alt]([image_url](https://github.com/laelynisrina/Aplikasi-Perhitungan-Kalori/blob/30c1c286261a3a1556f8fec89310c6656a8aaa41/img/addfood.png)) |
-| Log Makan      | `img/log.png`      |
-| Jadwal Makan   | `img/jadwal.png`   |
-| Tampilan Utama | `img/main_gui.png` |
-
-Pastikan folder **/img/** tersedia di repo GitHub.
+Namun saat ini fokus pada enkapsulasi dan modularisasi class.
 
 ---
 
@@ -279,9 +278,9 @@ Project ini dibuat untuk kebutuhan akademik dan bebas digunakan untuk pembelajar
 
 ## 9. Penutup
 
-FitByte membantu pengguna mengontrol pola makan dengan cara yang modern, informatif, dan mudah digunakan.
-Dengan adanya versi Console dan GUI, aplikasi ini dapat dijalankan pada berbagai kebutuhan pengguna.
+FitByte membantu pengguna mengontrol pola makan dengan cara yang modern, informatif, dan mudah digunakan. Dengan adanya versi Console dan GUI, aplikasi ini dapat dijalankan pada berbagai kebutuhan pengguna.
 
 ---
 
-
+## 10. Link Youtube
+https://youtu.be/EOmKtJp2UOk
