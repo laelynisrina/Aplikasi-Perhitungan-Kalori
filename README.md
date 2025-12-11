@@ -128,7 +128,7 @@ Berfungsi untuk:
 ---
 
 ### **Halaman Tambah Makanan**
-
+![image alt](https://github.com/laelynisrina/Aplikasi-Perhitungan-Kalori/blob/30c1c286261a3a1556f8fec89310c6656a8aaa41/img/addfood.png)
 * Input nama makanan, jumlah kalori, dan waktu makan.
 * Menambahkan data ke `MealLog`.
 * Memberikan peringatan ketika total kalori melewati batas harian.
